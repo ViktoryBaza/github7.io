@@ -14,11 +14,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 7px 3px #ff4f00;
     text-indent: 30px;
-    padding: 10px 20px 10px 20px;
+    padding: 20px;
     margin: 20px auto;
     width: 400px;
-    padding-bottom: 300px;
-    padding-left: 100px;
 }
  button {
     text-decoration: none;
@@ -38,9 +36,9 @@ button:hover {
     color: #f15c37;
   }
 hr {
-    border: none; 
-    color: red; 
-    background-color: red; 
+    border: none;
+    color: red;
+    background-color: red;
     height: 1px; /* Толщина линии */
    }
 .radio_group {
@@ -68,9 +66,17 @@ hr {
     border-radius: 10px;
     box-shadow: 0 0 7px 3px #ff4f00;
     text-indent: 30px;
-    padding: 10px 20px 10px 20px;
+    padding: 20px;
     margin: 20px auto;
     width: 400px;
-    padding-bottom: 30px;
-    padding-left: 100px;
+}
+
+.printBlock {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.activeImg {
+    position: relative;
 }
