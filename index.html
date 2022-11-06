@@ -9,54 +9,69 @@
 </head>
 <body>
     <div class="rama">
-        <p><input type="radio" name="prim" value="Поздравляю, Вы выбрали круг"> Круг</p>
-            <p><input type="radio" name="prim" value="Поздравляю, Вы выбрали квадрат"> Квадрат</p>
-            <p><input type="radio" name="prim" value="Поздравляю, Вы выбрали сердце"> Сердце</p>
-            <button id="one">Жми</button>
-            <hr>
-            
-            <p><input type="radio" name="prim2" value="40"> 40px</p>
-            <p><input type="radio" name="prim2" value="100"> 100px</p>
-            <p><input type="radio" name="prim2" value="200"> 200px</p>
-            <button id="one2">Жми</button>
-            <hr>
-        
-            <p><input type="radio" name="prim3" value="слева"> Слева</p>
-            <p><input type="radio" name="prim3" value="центр"> По середине</p>
-            <p><input type="radio" name="prim3" value="справа"> Справа</p>
-            <button id="one3">Жми</button>
-            <hr>
-        
-            <div id="printBlock"></div>
+        <p><input type="radio" name="prim" value="круг" checked> Круг</p>
+        <p><input type="radio" name="prim" value="квадрат"> Квадрат</p>
+        <p><input type="radio" name="prim" value="сердце"> Сердце</p>
+        <button id="one">Жми</button>
+
+        <hr>
+
+        <p><input type="radio" name="prim2" value="40"> 40px</p>
+        <p><input type="radio" name="prim2" value="100"> 100px</p>
+        <p><input type="radio" name="prim2" value="200"> 200px</p>
+        <button id="one2">Жми</button>
+
+        <hr>
+
+        <p><input type="radio" name="prim3" value="слева"> Слева</p>
+        <p><input type="radio" name="prim3" value="центр"> По середине</p>
+        <p><input type="radio" name="prim3" value="справа"> Справа</p>
+        <button id="one3">Жми</button>
+        <hr>
+
+        <div class="printBlock" id="printBlock">
+            <img class="activeImg" id="activeImg">
         </div>
-        <div class="rama2">
-            <form name="form" onsubmit="getAge(this);return false">
-                <div>
-                <label>Имя <span>*</span></label>  
-                <input type='text' name='username' required></div>  <br>
-                Введите свою дату рождения:
-                    <input type='text' name="date" placeholder="DD.MM.YYYY" value="09.06.2003">
-                    <input type='submit' value='Результат' class="myStyle"><br><br>
-                Ваш возраст: 
-                    <input type='text' name="res"><br><br>
-                    <label>Cудимость:</label>  
-                    <div class="radio_group" required> 
-                        <p><input type="radio" name="sud"> судим </p>
-                        <p><input type="radio" name="sud"> не судим </p>
-                    </div> 
-                <label>Номер телефона (с кодом) <span>*</span></label>
-                        <input type='text' name='usernumber' required>
-                    <div><br>
+
+    </div>
+
+    <div class="rama2">
+        <form name="form" onsubmit="getAge(this);return false">
+            <div>
+                <label>Имя <span>*</span></label>
+                <input type='text' name='username' required>
+            </div>
+
+            <br>
+            Введите свою дату рождения:
+            <input type='text' name="date" placeholder="DD.MM.YYYY" value="09.06.2003">
+            <input type='submit' value='Результат' class="myStyle">
+            <br>
+            <br>
+            Ваш возраст:
+            <input type='text' name="res"><br><br>
+            <label>Cудимость:</label>
+            <div class="radio_group" required>
+                <p><input type="radio" name="sud"> судим </p>
+                <p><input type="radio" name="sud"> не судим </p>
+            </div>
+            <label>Номер телефона (с кодом) <span>*</span></label>
+            <input type='text' name='usernumber' required>
+            <div>
+                <br>
                 Семейное положение:
-                    <div class="radio_group"> 
-                        <p><input type="radio" name="sud" id="myStyle"> Женат/Замужем </p>
-                        <p><input type="radio" name="sud" id="myStyle"> Не женат/не замужем </p>
-                    </div>
-                    <p> Интересы: <br> 
-                    <textarea rows="7" cols="30" name="text"></textarea></p>
+                <div class="radio_group">
+                    <p><input type="radio" name="sud"> Женат/Замужем </p>
+                    <p><input type="radio" name="sud"> Не женат/не замужем </p>
+                </div>
+                <p>
+                    Интересы: <br>
+                    <textarea rows="7" cols="30" name="text"></textarea>
+                </p>
                 <input type="submit" value="Отправить" class="myStyle">
-            </form>
-        </div>
+            </div>
+        </form>
+    </div>
     <script src="lab6.js"></script>
 </body>
 </html>
